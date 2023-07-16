@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating-App</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            background-color: #cacaca;
+            margin-left: 400px;
+            margin-right: 400px;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        .card{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        table{
+            width: 600px;
+        }
+        .col{
+            width: 200px;
+        }
+        form{
+            padding-top: 50px;
+            padding: 12px 20px;
+            
+        }
+        .input{
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px ;
+        }
+        .input:hover{
+            border: 2px solid #000;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+            padding: 12px 20px;
+            background-color: green;
+            color: #f2f2f2;
+            border: none;
+            border-radius: 4px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover{
+            background-color: #45a049;
+        }
+        input[type="file"]{
+            padding: 12px 20px;
+            float: left;  
+            margin-left: -10px;          
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            font-weight: bold;
+        }
+        #pgraduate{
+            margin-left: 23px;
+        }
+        #piercings{
+            margin-left: 8px;
+        }
+        .bod{
+            border-bottom: 2px solid #cacaca;
+        }
+     </style>
+</head>
+<body>
+    <div>
+        <h1>Personal Details </h1>
+    </div>
+    <div class="card">
+        <form action="">
+            <table>
+                <thead>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col"><label>Name</label></td>
+                        <td><input type="text" name="name" placeholder="Enter your Name" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Email</label></td>
+                        <td><input type="email" name="email" placeholder="Enter your Email" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Mobile</label></td>
+                        <td><input type="number" name="mob" placeholder="Enter your Mobile No" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Gender</label></td>
+                        <td class="bod">
+                            <input type="radio" name="gen" value="male" ><span>Male</span>
+                            <input type="radio" name="gen" value="female" ><span>Female</span>
+                            <input type="radio" name="gen" value="other" ><span>Other</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Date of proposed outing</label></td>
+                        <td><input type="date" name="date" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Check  all that you have</label></td>
+                        <td class="bod">
+                            <input type="checkbox" name="tattoos" id="tattoos" value="tattoos"><span>I  have Tattoos</span>      
+                            <input type="checkbox" name="piercings" id="piercings" value="piercings"><span>I  have Piercings</span> <br>       
+                            <input type="checkbox" name="van" id="van" value="van"><span>I own a Ferrari</span>
+                            <input type="checkbox" name="ferrari" id="ferrari" value="ferrari"><span>I own a panel van</span> <br>
+                            <input type="checkbox" name="fulltime" id="fulltime" value="fulltime"><span>I work full-time</span> <br>
+                            <input type="checkbox" name="older" id="older" value="older"><span>I am more than 2 years older than my daughter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Location of Date</label> </td>
+                        <td class="bod">
+                            <input type="radio" name="location" id="private" value="private"><span>Private</span>
+                            <input type="radio" name="location" id="public" value="public" required><span>Public</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Education</label></td>
+                        <td class="bod">
+                            <input type="checkbox" name="hschl" id="hschl" value="hschl"><span>High School</span>
+                            <input type="checkbox" name="intermediate" id="intermediate" value="intermediate"><span>Intermediate</span> <br>
+                            <input type="checkbox" name="graduate" id="graduate" value="graduate"><span>Graduate</span>
+                            <input type="checkbox" name="pgraduate" id="pgraduate" value="pgraduate"><span>Post-Graduate</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Why do you want to date my </label> </td>
+                        <td><textarea rows="5" cols="60" placeholder="50 words" class="input"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Contact Reference</label></td>
+                        <td><input type="text" name="reference" id="" placeholder="Contact Reference" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="col"><label>Bank Statement</label></td>
+                        <td>
+                            <input type="file" name="bank" id="" accept="image/png">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Button</title>
+    <style>
+        body{
+            background-color: #e7bcbca8;
+        }
+        .card{
+            border-radius: 5px;
+            background-color: #ebdada;
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+            position: relative;
+            left: 40%;
+            top: 300px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+        .qes{
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #3610dd; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .btn:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .btn1 {
+            background-color: #10ddaa; /* Green */
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .btn1:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        /* .btn:hover{
+            animation: nextarrow 1s ease-in-out;
+        }
+        @keyframes nextarrow {
+            0%,100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100%);
+            }
+        } */
+       
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="qes">Are you Dumb ?</div>
+        <div>
+            <button class="btn">NO</button>
+            <button class="btn1" onclick="msg()">Yes</button>
+        </div>
+    </div>
+<script>
+    var btn = document.querySelector(".btn");
+    var position;
+    btn.addEventListener("mouseover",function(e){
+        //debugger;
+        position ? (position = 0) : (position = 250);
+        btn.style.transform = "translate("+position+"px,0px)";
+        btn.style.transition = "all 0.3s ease";
+    });
+
+    function msg(){
+        alert("I already told you are Dumb");
+    }
+</script>
+</body>
+</html>

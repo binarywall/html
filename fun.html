@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            
+        }
+        .qes{
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .btn {
+            background-color: #3610dd; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+
+        /* .btn:hover{
+            animation: nextarrow 1s ease-in-out;
+        }
+        @keyframes nextarrow {
+            0%,100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100%);
+            }
+        } */
+       
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="qes">Are you Dumb ?</div>
+        <div>
+            
+            <button class="btn">NO</button>
+        </div>
+    </div>
+<script>
+    var btn = document.querySelector(".btn");
+    var position = 0;
+    btn.addEventListener("mousemove",function(e){
+        //debugger;
+        position = 150;
+        btn.style.transform = "translate('3000px','0px')";
+        //btn.style.transition = "all 0.3s ease";
+    });
+</script>
+</body>
+</html>
