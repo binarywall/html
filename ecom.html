@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue,Secular One,Signika">
+    <title>Document</title>
+
+    <style>
+        body{
+            
+            font-family:Bebas Neue,Secular One,Signika,Arial, Helvetica, sans-serif;
+        }
+        h1,h2,h3,h4{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        #bg{
+            background-image: url(img/banner.png);
+            background-repeat: no-repeat;
+            height: 600px;
+            width: 100%;
+            background-position: center; 
+            margin-top: 100px;          
+        }
+        .img{
+            width: 20%;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #menu{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(252, 206, 0);
+            position: fixed;
+            top: 0px; 
+            left: 72px;           
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 28px 25px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 28px;
+        }
+        li a:hover{
+            background-color: #0468aa;
+            color: #fff;
+        }
+               
+        marquee{
+            font-size: 26px;
+            background-color: rgb(252, 206, 0);
+
+        }
+        #cat{
+            display: flex;
+            justify-content: center;           
+        }
+        #cat>div>a>img{
+            display: block;
+            width: 400px;
+            padding: 20px;                        
+        }
+        #cat>div>a>img:hover{
+            box-shadow: 0 0 11px rgb(33,33,33);
+        }
+        #offer{
+            display: flex;
+            justify-content: center;
+        }
+        .box1{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(252, 206, 0);
+            margin-right: 10%;
+            font-size: 80px;
+            text-align: center;
+        }
+        .box2{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(4, 127, 241);
+            margin-left: 10%;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+        }
+        .box1:hover{
+            box-shadow: 0 0 11px rgb(33,33,33);
+        }
+        .box2:hover{
+            box-shadow: 0 0 11px rgb(33,33,33);
+        }
+        footer{
+            text-align: center;
+            background-color: rgb(252, 206, 0);
+        }
+    </style>
+</head>
+<body>
+    <!--header menu-->
+    <div id="menu">
+        <div>
+            <ul>
+                <li> <img  class="img" src="img/logo.png" alt="" srcset=""></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Woman</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign UP</a></li>
+            </ul>
+        </div>
+    </div>    
+    <!--Menu End-->
+    <div id="bg"></div>
+    <div><marquee behavior="alternate" direction="left" scrollamount="12">Get 20% off on your First Order  |  Get 20% off on your First Order  |  Get 20% off on your First Order  |  Get 20% off on your First Order  |  Get 20% off on your First Order</marquee></div>
+    <!--Category-->
+    <h1>Category</h1>
+    <div id="cat">
+        <div>
+            <a href="#"><img src="img/ecom/man.png" alt="man Category"></a>
+        </div>
+        <div>
+            <a href="#"><img src="img/ecom/woman.png" alt="man Category"></a>
+        </div>
+        <div>
+            <a href="#"><img src="img/ecom/kids.png" alt="man Category"></a>
+        </div>
+    </div>
+    <!--Category End-->
+
+    <!--Offer-->
+    <h1>Offers</h1>
+    <div id="offer">
+        <div class="box1"> GET 20% OFF on <br>FIRST ORDER </div>
+        <div class="box2"> USE 30_OFF to get 30% off</div>
+    </div>
+    <footer>
+        <p>
+            Copyright ©2022 Binary Wall . All rights reserved. Powered by Suraj Singh (DK1203@digikull.com)
+        </p>
+    </footer>
+</body>
+</html>
